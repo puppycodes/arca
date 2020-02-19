@@ -409,6 +409,7 @@ a {
   padding: 10px 0;
   font-size: 50px;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 
@@ -437,7 +438,7 @@ a {
 
 .menu-links li a {
   display: block;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .menu-links-container {
@@ -446,6 +447,11 @@ a {
   justify-content: flex-start;
   height: 100%;
   color: white;
+}
+
+.spacer {
+  height: 100px;
+  display: block;
 }
 
 .credit {
