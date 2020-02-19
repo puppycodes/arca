@@ -274,7 +274,7 @@ textarea {
 
 a {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 
@@ -306,7 +306,7 @@ a {
   right: 30px;
   width: 50px;
 
-  z-index: 1;
+  z-index: 3;
 
   -webkit-user-select: none;
   user-select: none;
@@ -395,6 +395,7 @@ a {
   height: 100vh;
   top: 0;
   margin: 0;
+  padding: 0;
   background: transparent;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -410,32 +411,7 @@ a {
   text-transform: uppercase;
 }
 
-.marquee {
-  width: 450px;
-  margin: 0 auto;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-}
 
-.marquee span {
-  display: inline-block;
-  padding-left: 100%;
-  /* show the marquee just outside the paragraph */
-  animation: marquee 15s linear infinite;
-}
-
-
-/* Make it move */
-
-@keyframes marquee {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-100%, 0);
-  }
-}
 
 /*
  * And let's fade it in from the left
@@ -448,8 +424,20 @@ a {
 
 .menu-links {
   position: relative;
-  left: 50px;
-  top: -20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.menu-links li a {
+  display: block;
+  font-size: 50px;
 }
 
 .menu-links-container {
@@ -457,6 +445,12 @@ a {
   align-items: center;
   justify-content: flex-start;
   height: 100%;
+  color: white;
+}
+
+.credit {
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .vimeo-wrapper {
