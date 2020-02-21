@@ -513,7 +513,6 @@ a {
 
 .iti {
   width: 100%;
-  border-bottom: 1px solid black;
 }
 
 .top {
@@ -547,7 +546,6 @@ button {
   width: 100%;
   bottom: 0;
   text-align: center;
-  border-top: 1px solid black;
 
 }
 
@@ -607,7 +605,7 @@ button:active {
     padding: 0.6rem;
     margin: 0;
     text-decoration: none;
-    background: #1a1f23c7;
+    background: #000000c7;
     color: #ffffff;
 }
 
@@ -619,7 +617,7 @@ button:active {
     padding: 0;
     margin: 0 0 0 -1px;
     box-shadow: 1px 1px 4px rgba(0,0,0,.2);
-    background-color: #293540;
+    background-color: #1a1f23c7;
     border: 1px solid #ccc;
     white-space: nowrap;
     max-height: 200px;
