@@ -61,11 +61,11 @@
            <br>
            <br>
            <br>
-          <li><a href="#">Link One</a></li>
+          <li><a href="https://arca.ffm.to/atatatatat">@@@@@</a></li>
           <br>
-          <li><a href="#">Link Two</a></li>
+          <!-- <li><a href="#">Link Two</a></li> -->
             <div id="marquee" class="credits"></div>
-
+            <div id="marquee2" class="dates"></div>
                 <div class="spacer"></div>
 
           </div>
@@ -84,6 +84,7 @@
  <div class="logo">
    <img src="img/logo-cropped.svg">
    <img src="img/repeating-paint.svg">
+   <a href="https://www.facebook.com/arca1000000/app/123966167614127/"><img src="img/poster.jpg"></a>
    <img src="img/repeating-paint.svg">
  </div>
 
@@ -149,6 +150,30 @@ console.log("test");
         return $separator;
       });
     </script>
+
+    <script type="text/javascript">
+          let $marquee2 = document.getElementById('marquee2');
+          let marquee2 = window.m = new dynamicMarquee.Marquee($marquee2, { rate: -170 });
+
+          window.l = dynamicMarquee.loop(marquee2, [
+            function() { return 'Sat-Apr-25-20 : New York, NY : Brooklyn Steel' },
+            function() { return 'Mon-Apr-27-20 : Washington, DC : 9:30 Club'; },
+            function() { return 'Tue-Apr-28-20 : Boston, MA : Royale';},
+            function() { return 'Fri-May-01-20 : Toronto, ON, CAN : The Phoenix Concert Theatre'; },
+            function() { return 'Sat-May-02-20 : Philadelphia, PA: The Ave'; },
+            function() { return 'Thu-May-07-20 : Minneapolis, MN: First Avenue'; },
+            function() { return 'Fri-May-08-20 : Chicago, IL: Metro'; },
+            function() { return 'Sun-May-10-20 : Vancouver, BC, CAN: Vogue Theatre'},
+            function() { return 'Tue-May-12-20 : Seattle, WA: The Neptune Theatre'},
+            function() { return 'Thu-May-14-20 : San Francisco, CA: The Regency Ballroom'; },
+            function() { return 'Fri-May-15-20 : Los Angeles, CA: The Belasco' }
+
+          ], function() {
+            var $separator = document.createElement('div');
+            $separator.innerHTML = ',&nbsp&nbsp&nbsp&nbsp';
+            return $separator;
+          });
+        </script>
 
 </body>
 
