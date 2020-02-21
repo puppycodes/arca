@@ -641,7 +641,7 @@ button:focus {
        margin: 0;
        padding: 7px 0;
        font-size: 30px;
-       bottom: 50px;
+       bottom: 80px;
        left: 0;
        right: 0;
        background-color: transparent;
@@ -655,7 +655,7 @@ button:focus {
             margin: 0;
             padding: 7px 0;
             font-size: 30px;
-            bottom: 120px;
+            bottom: 105px;
             left: 0;
             right: 0;
             background-color: transparent;
