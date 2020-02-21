@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="278px" height="426px" viewBox="0 0 278 426" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>arrow-right</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow-right" transform="translate(-1.000000, -1.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Arrow-down" transform="translate(139.500000, 213.500000) rotate(-90.000000) translate(-139.500000, -213.500000) translate(-73.500000, 74.500000)">
+                <path d="M204.223349,0.889 L0,0.889 C0,0.889 204.223349,277.5 204.223349,278.001347 C204.223349,278.5 425.135,0.889 425.135,0.889 C425.135,0.889 351.497783,0.889 204.223349,0.889 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

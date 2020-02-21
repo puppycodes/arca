@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/intlTelInput.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css" integrity="sha256-D9M5yrVDqFlla7nlELDaYZIpXfFWDytQtiV+TaH6F1I=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/main.css">
 
   <link rel="stylesheet" href="fonts/fonts.css">
@@ -21,6 +22,7 @@
 
   <meta name="theme-color" content="#fafafa">
   <script type="text/javascript" src="js/intlTelInput.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dynamic-marquee@1.2.1/dist/dynamic-marquee.min.js"></script>
 </head>
 
 <body>
@@ -62,24 +64,7 @@
           <li><a href="#">Link One</a></li>
           <br>
           <li><a href="#">Link Two</a></li>
-            <div class="credits">
-              <h3>Credits</h3>
-                      <p>Directed by Frederik Heyman</p>
-                      <p>concept and scenario : Frederik Heyman and Arca</p>
-                      <p>Symbolic gestation : Arca</p>
-                        <br>
-                      <p>Produced by: Bounce Rocks</p>
-                      <p>Assistant: Evgeny Mezhibovskiy</p>
-                      <p>Styling: Natacha Voranger</p>
-                      <p>Styling assistant: Louis Guimard</p>
-                      <p>Make up: Cecile Paravina</p>
-                      <p>Hair: Yann Turchi</p>
-                      <p>DOP Greenkey: Pieter Neirynck</p>
-                      <p>Additional Edit on Holographic projection: Darryl Natale</p>
-                      <br>
-                      <a href="https://frederikheyman.com/">frederikheyman.com</a>
-                      <br>
-            </div>
+            <div id="marquee" class="credits"></div>
 
                 <div class="spacer"></div>
 
@@ -89,34 +74,30 @@
     </ul>
   </div>
 </nav>
-  <div class="logo">
-    <img src="img/logo-cropped.svg">
-    <img src="img/repeating-paint.svg">
-    <img src="img/repeating-paint.svg">
-  </div>
 
 </header>
   <div class="vimeo-wrapper">
     <iframe src="https://player.vimeo.com/video/392273747?background=1&autoplay=1&loop=1&byline=0&title=0"
             frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
  </div>
-  <div class="form-container">
-    <div class="form">
+
+ <div class="logo">
+   <img src="img/logo-cropped.svg">
+   <img src="img/repeating-paint.svg">
+   <img src="img/repeating-paint.svg">
+ </div>
+
+<div class="form-wrap">
        <form>
          <div class="top">
            <input id="phone" name="phone" type="tel">
-           <button type="submit">Submit</button>
+            <button type="submit">submit</button>
          </div>
-           <div class="consent-container">
-             <div class="consent">
-               By submitting this form I authorize and expressly consent to receiving calls and/or SMS/text and voice messages delivered to my phone number
-             </div>
-           </div>
+         <div class="consent">
+           By submitting this form I authorize and expressly consent to receiving calls and/or SMS/text and voice messages delivered to my phone number
+         </div>
        </form>
-
-     </div>
-  </div>
-
+</div>
 <script type="text/javascript">
 var input = document.querySelector("#phone");
 window.intlTelInput(input, {
@@ -145,6 +126,29 @@ window.intlTelInput(input, {
 
 console.log("test");
 </script>
+
+<script type="text/javascript">
+      var $marquee = document.getElementById('marquee');
+      var marquee = window.m = new dynamicMarquee.Marquee($marquee, { rate: -100 });
+      window.l = dynamicMarquee.loop(marquee, [
+        function() { return 'Directed by Frederik Heyman'; },
+        function() { return 'Concept and Scenario : Frederik Heyman and Arca'; },
+        function() { return 'Symbolic gestation : Arca'; },
+        function() { return 'Produced by: Bounce Rocks'; },
+        function() { return 'Assistant: Evgeny Mezhibovskiy'; },
+        function() { return 'Styling: Natacha Voranger'; },
+        function() { return 'Styling assistant: Louis Guimard'; },
+        function() { return 'Make up: Cecile Paravina'; },
+        function() { return 'Hair: Yann Turchi'; },
+        function() { return 'DOP Greenkey: Pieter Neirynck'; },
+        function() { return 'Additional Edit on Holographic projection: Darryl Natale'; },
+        function() { return 'frederikheyman.com'; }
+      ], function() {
+        var $separator = document.createElement('div');
+        $separator.innerHTML = ',&nbsp&nbsp';
+        return $separator;
+      });
+    </script>
 
 </body>
 

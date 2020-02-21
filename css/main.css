@@ -15,12 +15,14 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  font-family: Acumin Pro;
+  background-color: #000;
 }
 
 
 body {
   overflow-x: hidden;
+  color: #000;
+  font-family: Acumin Pro !important;
 }
 
 /*
@@ -170,7 +172,15 @@ textarea {
 * 1. The space content is one way to avoid an Opera bug when the
 *    `contenteditable` attribute is included anywhere else in the document.
 *    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
+*    that receive the `c    background-color: #1a1f23c7;
+    color: white;
+    font-size: 9px;
+    padding: 5px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    border-top: 1px solid black;learfix` class.
 * 2. The use of `table` rather than `block` is only necessary if using
 *    `:before` to contain the top-margins of child elements.
 */
@@ -279,8 +289,8 @@ a {
 
 
 .logo {
-  position: fixed;
-  top: 100px;
+  position: relative;
+  padding-top: 100px;
   min-width: 300px;
   max-width: 500px;
   left: 0;
@@ -301,7 +311,7 @@ a {
 #menuToggle
 {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 30px;
   right: 30px;
   width: 50px;
@@ -502,47 +512,143 @@ a {
    transform: translate(-50%, -50%);
 }
 
-.form-container {
-  margin: auto;
-  display: block;
-  position: absolute;
-  bottom: 50px;
-  width: 327px;
-  right: 0;
-  left: 0;
-}
-
-
 .iti {
-    position: relative;
+  width: 100%;
+  border-bottom: 1px solid black;
 }
 
 .top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+
 }
 
-input {
-    padding: 10px;
-    border: 0px;
+form {
+  position: relative;
+      text-align: center;
+      max-width: 450px;
+      margin: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      left: 0;
+      right: 0;
+      bottom: 15px;
 }
 
 button {
-  padding: 10px;
-  margin-left: 2px;
-  border: 0px;
-  cursor: pointer;
-  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
 }
 
-.consent-container {
-  background-color: white;
-  color: black;
+.consent {
+  background-color: #1a1f23c7;
+  color: white;
   font-size: 9px;
   padding: 5px;
+  position: relative;
+  width: 100%;
   bottom: 0;
   text-align: center;
-  text-transform: uppercase;
-  margin-top: 2px;
+  border-top: 1px solid black;
+
 }
+
+button {
+    display: inline-block;
+    border: none;
+    padding: 0.6rem;
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out,
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: #1a1f23c7;
+    font-family: Acumin Pro;
+
+
+
+}
+
+button:hover, button:focus {
+
+}
+
+
+.iti--allow-dropdown input, .iti--allow-dropdown input[type="tel"] {
+  width: 100%;
+  border-radius: 0px;
+  text-align: center;
+  padding-left: 0;
+  font-family: Acumin Pro;
+
+}
+
+
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+.iti input {
+  display: inline-block;
+    border: none;
+    padding: 0.6rem;
+    margin: 0;
+    text-decoration: none;
+    background: #1a1f23c7;
+    color: #ffffff;
+}
+
+.iti__country-list {
+    position: absolute;
+    z-index: 2;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0 0 0 -1px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.2);
+    background-color: #293540;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+    max-height: 200px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    color: white;
+    width: 250px;
+}
+
+.iti-mobile .iti__country-list {
+    max-height: 100%;
+    width: 250px;
+}
+
+button:focus {
+    outline: 0px solid #fff;
+    outline-offset: 0;
+}
+
+#marquee {
+       position: fixed;
+       overflow: hidden;
+       margin: 0;
+       padding: 7px 0;
+       font-size: 20px;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       background-color: transparent;
+       color: #ffffff;
+     }
