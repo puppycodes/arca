@@ -517,6 +517,9 @@ a {
 
 .top {
   width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
 }
 
@@ -532,20 +535,18 @@ form {
       bottom: 15px;
 }
 
-button {
-  width: 100%;
-  height: 100%;
-}
+
 
 .consent {
-  background-color: #1a1f23c7;
+  background-color: #000000c7;
   color: white;
   font-size: 9px;
-  padding: 5px;
+  padding: 10px;
   position: relative;
   width: 100%;
   bottom: 0;
   text-align: center;
+  font-family: helvetica;
 
 }
 
@@ -554,6 +555,8 @@ button {
     border: none;
     padding: 0.6rem;
     margin: 0;
+    height: 50px;
+    width: 50%;
     text-transform: uppercase;
     text-decoration: none;
     background: transparent;
@@ -582,18 +585,12 @@ button:hover, button:focus {
 .iti--allow-dropdown input, .iti--allow-dropdown input[type="tel"] {
   width: 100%;
   border-radius: 0px;
-  text-align: center;
-  padding-left: 0;
   font-family: Acumin Pro;
+  height: 50px;
 
 }
 
-
-
-button:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
-}
+:focus { outline: none;}
 
 button:active {
     transform: scale(0.99);
@@ -648,4 +645,13 @@ button:focus {
        right: 0;
        background-color: transparent;
        color: #ffffff;
+     }
+
+     .iti--separate-dial-code .iti__selected-dial-code {
+         margin-left: 6px;
+         color: white;
+     }
+
+     .iti__flag {
+       display: none;
      }
