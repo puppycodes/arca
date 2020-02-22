@@ -650,16 +650,16 @@ button:focus {
 
 
      #marquee2 {
-            position: fixed;
-            overflow: hidden;
-            margin: 0;
-            padding: 7px 0;
-            font-size: 30px;
-            bottom: 105px;
-            left: 0;
-            right: 0;
-            background-color: transparent;
-            color: #ffffff;
+       position: fixed;
+       overflow: hidden;
+       margin: 0;
+       padding: 0px 0;
+       font-size: 30px;
+       bottom: 115px;
+       left: 0;
+       right: 0;
+       background-color: #000000a1;
+       color: #ffffff;
           }
 
           .credits {
