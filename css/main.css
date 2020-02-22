@@ -653,10 +653,13 @@ button:focus {
        position: fixed;
        overflow: hidden;
        margin: 0;
+       padding-bottom: 433px;
        padding: 0px 0;
        font-size: 30px;
-       bottom: 115px;
+       bottom: 102px;
        left: 0;
+       padding-top: 7px;
+       height: 80px;
        right: 0;
        background-color: #000000a1;
        color: #ffffff;
